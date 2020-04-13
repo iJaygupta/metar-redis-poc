@@ -3,7 +3,7 @@ const sendResponse = require("../lib/apiResponse").sendResponse;
 const axios = require('axios');
 const metarParser = require('../models/metarParser');
 const API_URL = 'http://tgftp.nws.noaa.gov/data/observations/metar/stations/';
-const CACHE_TIMEOUT = process.env.CACHE_TIMEOUT || 3600;
+const CACHE_TIMEOUT = process.env.CACHE_TIMEOUT || 300;
 
 /**
  * Get Weather Data.
